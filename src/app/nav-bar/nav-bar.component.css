@@ -1,0 +1,30 @@
+#navbarid {
+    background-color: #F4364C;
+}
+.navbar .container-fluid, 
+.navbar-expand-lg .navbar-collapse, 
+.navbar-expand-lg .navbar-nav{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbar-brand {
+    margin-left: 0.5em;
+    padding-bottom: 0;
+    border-bottom: 4px solid #464646;
+  }
+  .navbar {
+    align-items: flex-start;
+    margin: -1% -1% 1% -1%;
+  }
+  .navbar-nav{
+    padding-top: 40%;
+  }
+@media (min-width: 992px) {
+    .navbar {
+      width: 100%;
+      height: 100vh;
+    }
+    form input {
+      margin-bottom: 0.7em;
+    }
+  }
