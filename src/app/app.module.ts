@@ -8,6 +8,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { SummeryComponent } from './summery/summery.component';
 import { BillingComponent } from './billing/billing.component';
+import { AppService } from './services/app.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,14 +18,17 @@ import { BillingComponent } from './billing/billing.component';
     NavBarComponent,
     InventoryComponent,
     SummeryComponent,
-    BillingComponent
+    BillingComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    AppService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
